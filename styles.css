@@ -1,0 +1,166 @@
+
+* {
+        box-sizing: border-box;
+}
+
+/* Web Fonts ------*/
+
+@font-face {
+    font-family: 'Abolition Round';
+    src: url('Abolition-Round.eot');
+    src: url('Abolition-Round.eot?#iefix') format('embedded-opentype'),
+    url('Abolition-Round.woff') format('woff'),
+    url('Abolition-Round.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+/* Basic Styles ------*/
+
+body {
+    margin: 0;
+    min-width: 320px;
+}
+
+.page-wrapper {
+    background-color: #ececec;
+    margin: 0 auto;
+}
+
+h1,
+li {
+    font-family: "Abolition Round";
+
+}
+
+h2 {
+}
+
+
+/* link Styles ------*/
+
+li {
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #ffffff;
+
+}
+
+a:link, a:visited {
+    background-color: #ffffff;
+    color: rgb(43, 43, 43);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+}
+  
+a:hover, a:active {
+    color: rgb(0, 204, 255);
+}
+
+p {
+    font-size: 18pt;
+}
+
+
+/* Header Styles ------*/
+
+#title {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#main-pic {
+    margin: 40px 0 20px 0;
+}
+
+/* Navigation ------*/
+
+#title {
+    font-size: 20pt;
+    height: 30px;
+    width: 100%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    background-color: #f5f4f4;
+}
+
+nav h2 {
+    width: 90%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0;
+    padding: 0
+}
+
+ul a{
+    margin: 4px 0;
+}
+
+ul h2 {
+    margin: 0 auto;
+}
+
+li {
+background-color: #ffffff;
+}
+
+
+/* Body ------*/
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.main-wrapper p {
+    width: 90%;
+}
+
+img {
+    width: 80%;
+    flex: 1;   
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* Body ------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #f5f4f4;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+footer p {
+    padding: 10px 0;
+}
+
+/* Clearfix ------*/
+.box:before, .box:after { content: ''; display: table; clear: both; }
