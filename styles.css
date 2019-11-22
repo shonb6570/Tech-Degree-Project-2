@@ -6,14 +6,34 @@
 /* Web Fonts ------*/
 
 @font-face {
-    font-family: 'Abolition Round';
-    src: url('Abolition-Round.eot');
-    src: url('Abolition-Round.eot?#iefix') format('embedded-opentype'),
-    url('Abolition-Round.woff') format('woff'),
-    url('Abolition-Round.ttf') format('truetype');
+    font-family: 'BoxedSemibold';
+    src: url('bBoxedSemibold.eot');
+    src: url('BoxedSemibold.eot?#iefix') format('embedded-opentype'),
+    url('BoxedSemibold.woff') format('woff'),
+    url('BoxedSemibold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    }
+}
+
+@font-face {
+    font-family: 'BoxedThin';
+    src: url('boxedThin.eot');
+    src: url('boxedThin.eot?#iefix') format('embedded-opentype'),
+    url('boxedThin.woff') format('woff'),
+    url('boxedThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'BoxedLight';
+    src: url('BoxedLight.eot');
+    src: url('BoxedLight.eot?#iefix') format('embedded-opentype'),
+    url('BoxedLight.woff') format('woff'),
+    url('BoxedLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Basic Styles ------*/
 
@@ -29,46 +49,61 @@ body {
 
 h1,
 li {
-    font-family: "Abolition Round";
+    font-family: "BoxedThin";
 
 }
 
 h2 {
+    font-family: "BoxedLight" ;
+    color: #646464;
+    text-align: center;
 }
 
 
 /* link Styles ------*/
 
+nav a {
+    padding: 30px;
+}
+
 li {
     flex-direction: column;
     list-style-type: none;
-    background-color: #ffffff;
-
 }
 
 a:link, a:visited {
     background-color: #ffffff;
-    color: rgb(43, 43, 43);
+    color: rgb(75, 75, 75);
     text-align: center;
     text-decoration: none;
-    padding: 10px 0;
 }
   
 a:hover, a:active {
-    color: rgb(0, 204, 255);
+    color: rgb(0, 204, 255 );
 }
 
 p {
     font-size: 18pt;
 }
 
+#portfolio,
+#contact {
+    text-align: center;
+    font-family: "BoxedSemibold";
+    font-size: 18pt;
+    width: 100%;
+}
 
 /* Header Styles ------*/
 
 #title {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 40px 0;
+    font-family: "BoxedSemibold";
+    font-size: 28pt;
+    height: 40px;
+    width: 100%;
 }
 
 header {
@@ -82,11 +117,6 @@ header {
 
 /* Navigation ------*/
 
-#title {
-    font-size: 20pt;
-    height: 30px;
-    width: 100%;
-}
 
 nav {
     align-items: center;
@@ -100,6 +130,7 @@ nav h2 {
     width: 90%;
 }
 
+
 ul {
     display: flex;
     flex-direction: column;
@@ -109,7 +140,9 @@ ul {
 }
 
 ul a{
-    margin: 4px 0;
+    justify-content: center;
+    display: flex;
+    margin: 10px 0;
 }
 
 ul h2 {
@@ -118,6 +151,7 @@ ul h2 {
 
 li {
 background-color: #ffffff;
+margin: 5px;
 }
 
 
@@ -127,14 +161,16 @@ background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     background-color: #ffffff;
-    width: 90vw;
+    width: 87vw;
     margin: 0 auto;
+    text-align: center;
 }
 
 .main-wrapper p {
     width: 90%;
+    font-family: "BoxedLight" ;
+    color: #646464;
 }
 
 img {
@@ -145,22 +181,43 @@ img {
     justify-content: center;
 }
 
-/* Body ------*/
+/* Footer ------*/
+
 footer {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-content: center;
-    background-color: #f5f4f4;
-    width: 100%;
     margin: 0 auto;
+    background-color: #e7e3e3;
+    width: 90%;
     padding-top: 10px;
+    font-family: "BoxedLight";
 }
 
-footer p {
-    padding: 10px 0;
+#email {
+    background-color: #e7e3e3;
+    font-family: "BoxedLight";
+    font-size: 18pt;
 }
+
+hr {
+    height: 4px;
+    width: 80%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.contact-info a{
+    background-color: #e7e3e3;
+}
+
+/* Media Queries ------*/
+
+
 
 /* Clearfix ------*/
 .box:before, .box:after { content: ''; display: table; clear: both; }
