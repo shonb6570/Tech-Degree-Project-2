@@ -7,30 +7,30 @@
 
 @font-face {
     font-family: 'BoxedSemibold';
-    src: url('bBoxedSemibold.eot');
-    src: url('BoxedSemibold.eot?#iefix') format('embedded-opentype'),
-    url('BoxedSemibold.woff') format('woff'),
-    url('BoxedSemibold.ttf') format('truetype');
+    src: url('../fonts/BoxedSemibold.eot');
+    src: url('../fonts/BoxedSemibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BoxedSemibold.woff') format('woff'),
+    url('../fonts/BoxedSemibold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BoxedThin';
-    src: url('boxedThin.eot');
-    src: url('boxedThin.eot?#iefix') format('embedded-opentype'),
-    url('boxedThin.woff') format('woff'),
-    url('boxedThin.ttf') format('truetype');
+    src: url('../fonts/BoxedThin.eot');
+    src: url('../fonts/BoxedThin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BoxedThin.woff') format('woff'),
+    url('../fonts/BoxedThin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face { 
     font-family: 'BoxedLight';
-    src: url('BoxedLight.eot');
-    src: url('BoxedLight.eot?#iefix') format('embedded-opentype'),
-    url('BoxedLight.woff') format('woff'),
-    url('BoxedLight.ttf') format('truetype');
+    src: url('../fonts/BoxedLight.eot');
+    src: url('../fonts/BoxedLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BoxedLight.woff') format('woff'),
+    url('../fonts/BoxedLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
