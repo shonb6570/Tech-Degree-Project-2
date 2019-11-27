@@ -43,6 +43,7 @@
 body {
     margin: 0 auto;
     min-width: 320px;
+    overflow-x: hidden;
 }
 
 h1,
@@ -178,7 +179,6 @@ margin: 5px;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ffffff;
-    width: 87vw;
     margin: 0 auto;
     text-align: center;
 }
@@ -189,7 +189,7 @@ margin: 5px;
     color: #646464;
 }
 
-.main-wrapper img {
+.column img {
     width: 80%;
     flex: 1;   
     padding: 10px;
@@ -290,5 +290,21 @@ hr {
 
     }
 
-  
+    .column {
+        width: 50%;
+    }
+
+    .column p {
+        width: 100%;
+        padding: 0 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .column {
+        width: 33%;
+    }
+    
 }
