@@ -25,16 +25,6 @@
     font-style: normal;
 }
 
-@font-face { 
-    font-family: 'BoxedLight';
-    src: url('../fonts/BoxedLight.eot');
-    src: url('../fonts/BoxedLight.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/BoxedLight.woff') format('woff'),
-    url('../fonts/BoxedLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Basic Styles ------*/
 
 body {
@@ -148,6 +138,7 @@ p {
     font-size: 28pt;
     height: 40px;
     width: 100%;
+    color:  rgba(0, 204, 255, 0.685);
 }
 
 header {
@@ -157,6 +148,7 @@ header {
 
 #main-topic {
     width: 80%;
+    color: rgba(0, 204, 255, 0.685);
 }
 
 /* Navigation ------*/
@@ -339,6 +331,7 @@ hr {
         white-space: nowrap;
         padding-left: 5%;
         padding-right: 0;
+        color: rgba(0, 204, 255, 0.685);
     }
     .footer-navigation{
         justify-content: flex-end; 
