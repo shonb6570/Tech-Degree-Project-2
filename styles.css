@@ -1,6 +1,3 @@
-
-
-
 * {  
     box-sizing: border-box;
     /* margin: 0 !important; */
@@ -41,7 +38,6 @@
 /* Basic Styles ------*/
 
 body {
-    margin: 0 auto;
     min-width: 320px;
     overflow-x: hidden;
 }
@@ -53,12 +49,42 @@ li {
 }
 
 h2 {
-    font-family: "BoxedLight" ;
+    font-family: "BoxedLight";
     color: #646464;
     text-align: center;
 }
 
+body,
+#main-pic,
+#main-topic,
+ul,
+ul h2,
+.main-wrapper,
+footer {
+    margin: 0 auto;
+}
 
+
+/* Flexbox ------*/
+
+.header-row-1,
+.header-row-2,
+#title,
+nav,
+ul,
+ul a,
+.main-wrapper,
+.footer-nav {
+    display: flex;
+}
+
+li,
+.header-row-1,
+.header-row-2,
+nav,
+ul {
+    flex-direction: column;
+}
 
 /* link Styles ------*/
 
@@ -67,7 +93,6 @@ nav a {
 }
 
 li {
-    flex-direction: column;
     list-style-type: none;
 }
 
@@ -97,21 +122,16 @@ p {
 /* Header Styles ------*/
 
 .header-row-1 {
-    display: flex;
     flex: 1;
-    flex-direction: column;
     margin-bottom: 40px;
 }
 
 .header-row-2 {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 40px;
-
+    width: 100%;
 }
 
 #title {
-    display: flex;
     justify-content: center;
     margin: 40px 0;
     font-family: "BoxedSemibold";
@@ -122,24 +142,17 @@ p {
 
 header {
     width: 100vw;
-    margin-top: 40px;
 }
 
-#main-pic {
-    margin: 0 auto;
-}
 
 #main-topic {
     width: 80%;
-    margin: 0 auto;
 }
 
 /* Navigation ------*/
 
 
 nav {
-    display: flex;
-    flex-direction: column;
     background-color: #f5f4f4;
 }
 
@@ -149,21 +162,13 @@ nav h2 {
 
 
 ul {
-    display: flex;
-    flex-direction: column;
     width: 90vw;
-    margin: 0 auto;
     padding: 0;
 }
 
 ul a{
     justify-content: center;
-    display: flex;
     margin: 10px 0;
-}
-
-ul h2 {
-    margin: 0 auto;
 }
 
 li {
@@ -175,17 +180,16 @@ margin: 5px;
 /* Body ------*/
 
 .main-wrapper {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #ffffff;
-    margin: 0 auto;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .main-wrapper p {
     width: 100vw;
-    font-family: "BoxedLight" ;
+    font-family: "BoxedLight";
     color: #646464;
 }
 
@@ -201,7 +205,6 @@ margin: 5px;
 
 footer {
     text-align: center;
-    margin: 0 auto;
     background-color: #e7e3e3;
     width: 100vw;
     padding-top: 10px;
@@ -222,19 +225,27 @@ footer p {
 
 hr {
     height: 1px;
-    width: 80%;
+    width: 90%;
 }
 
-.contact-info {
-    display: flex;
+.footer-contact-info {
+    padding-bottom: 20px;
+}
+
+.footer-nav {
     flex-direction: row;
     flex: 1;
     justify-content: space-between;
-    margin: 0 30px 5px 30px;
+    padding: 0 5%;
+
 }
 
-.contact-info a{
+.footer-nav a{
     background-color: #e7e3e3;
+}
+
+.footer-nav2 {
+    display: none;
 }
 
 /* Media Queries ------*/
@@ -247,10 +258,9 @@ hr {
     }
 
     ul {
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: row;
         flex: 1;
-        padding: 0 12em;
         width: 100%;
     }
 
@@ -275,19 +285,23 @@ hr {
         display: flex;
         flex-direction: row;
         margin-bottom: 40px;
+        padding: 0 5%;
     }
 
     #main-pic{
         order: 2;
         width: 50%;
-        padding: 0 20px 0 40px;
     }
 
     #main-topic {
         width: 50%;
-        padding: 0 20px 0 40px;
         text-align: left;
+        padding-right: 5%;
 
+    }
+
+    .main-wrapper {
+        padding: 40px 2%;
     }
 
     .column {
@@ -298,7 +312,28 @@ hr {
         width: 100%;
         padding: 0 30px;
     }
-    
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-nav2,
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    #footer-name {
+        justify-content: flex-start; 
+        white-space: nowrap;
+        padding-left: 5%;
+        padding-right: 0;
+    }
+    .footer-navigation{
+        justify-content: flex-end; 
+        padding-right: 5%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -306,5 +341,10 @@ hr {
     .column {
         width: 33%;
     }
-    
+    .page-wrapper,
+    header,
+    footer{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
