@@ -334,6 +334,9 @@ hr {
         justify-content: flex-end; 
         padding-right: 5%;
     }
+    .footer-navigation li{
+        padding-left: 2em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
